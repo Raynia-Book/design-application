@@ -114,3 +114,8 @@ Partial data is allowed.
 **Code** : `403 FORBIDDEN`
 
 **Content** : `{}`
+
+## Notes
+
+* All field can get more infomation in [Books Database](../../../database/README.md)
+

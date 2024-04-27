@@ -6,4 +6,4 @@ This is an api specification for File Storage Version 1.
 
 Open endpoints require no Authentication.
 
-* [Get Pdf](file/pdf.md) : `GET /api/v1/file/pdf/:filename`
+* [Get Pdf](file/pdf.md) : `GET /api/v1/file/pdf/:filename/`

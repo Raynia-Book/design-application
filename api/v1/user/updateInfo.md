@@ -1,59 +1,33 @@
-# Update Current User
+# Updaet Info
 
-Allow the Authenticated User to update their details.
+Update an Account for the user.
 
-**URL** : `/api/v1/user/updateInfo`
+**URL** : `/api/v1/user/`
 
 **Method** : `PUT`
 
-**Auth required** : YES
+**Auth required** : Yes
 
-**Permissions required** : None
+**Permissions required** : User is a owner of the account
 
 **Data constraints**
 
 ```json
 {
-    "first_name": "[1 to 30 chars]",
-    "last_name": "[1 to 30 chars]"
+    "imagePath": "[Url format]",
+    "email": "[email format]",
+    "name": "[unicode 64 chars max]",
+    "password": "[password constraint]",
 }
 ```
 
-Note that `id` and `email` are currently read only fields.
-
-**Header constraints**
-
-The application used to update the User's information can be sent in the
-header. Values passed in the `UAPP` header only pass basic checks for validity:
-
-- If 0 characters, or not provided, ignore.
-- If 1 to 8 characters, save.
-- If longer than 8 characters, ignore.
-
-```
-UAPP: [1 to 8 chars]
-```
-
-**Data examples**
-
-Partial data is allowed.
+**Data example** Partial field allow.
 
 ```json
 {
-    "first_name": "John"
-}
-```
-
-Empty data can be PUT to erase the name, in this case from the iOS application
-version 1.2:
-
-```
-UAPP: ios1_2
-```
-
-```json
-{
-    "last_name": ""
+    "imagePath": "https://google.com",
+    "name": "name",
+    "password": "pAs#@woR094",
 }
 ```
 
@@ -63,16 +37,15 @@ UAPP: ios1_2
 
 **Code** : `200 OK`
 
-**Content example** : Response will reflect back the updated information. A
-User with `id` of '1234' sets their name, passing `UAPP` header of 'ios1_2':
+**Content example** : Response will reflect back the updated information.
 
 ```json
 {
     "id": 1234,
-    "first_name": "Joe",
-    "last_name": "Bloggs",
-    "email": "joe25@example.com",
-    "uapp": "ios1_2"
+    "imagePath": "https://google.com",
+    "email": "test@gmail.com",
+    "name": "name",
+    "password": "pAs#@woR094",
 }
 ```
 
@@ -87,7 +60,7 @@ User with `id` of '1234' sets their name, passing `UAPP` header of 'ios1_2':
 ```json
 {
     "first_name": [
-        "Please provide maximum 30 character or empty string",
+        "Please provide valid data.",
     ]
 }
 ```
@@ -96,5 +69,3 @@ User with `id` of '1234' sets their name, passing `UAPP` header of 'ios1_2':
 
 * Endpoint will ignore irrelevant and read-only data such as parameters that
   don't exist, or fields that are not editable like `id` or `email`.
-* Similar to the `GET` endpoint for the User, if the User does not have a
-  UserInfo instance, then one will be created for them.

@@ -36,6 +36,7 @@ This is for showing book data in the specify book page.
     "publisher": "Cid Choky",
     "author": "Cid Choky",
     "description": "abc",
+    "sourceUrl": "http://lazada.com",
     "content": {
         "explainTypes": {
             "T": 12,

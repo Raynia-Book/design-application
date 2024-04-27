@@ -32,6 +32,7 @@ Partial data is allowed.
         "imagePath": ["https://google.com"],
         "bookTypes": ["เนื้อหา", "โจทย์"],
         "description": "abc",
+        "sourceUrl": "http://lazada.com"
     },
     "content": {
         "complete": 3,

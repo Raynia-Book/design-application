@@ -26,3 +26,11 @@ subscription information.
     "email": "thisisan@example.com"
 }
 ```
+
+## Error Responses
+
+**Condition** : If there was no Account available to delete.
+
+**Code** : `404 NOT FOUND`
+
+**Content** : `{}`

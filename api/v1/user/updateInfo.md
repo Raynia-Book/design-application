@@ -1,4 +1,4 @@
-# Updaet Info
+# Update Info
 
 Update an Account for the user.
 

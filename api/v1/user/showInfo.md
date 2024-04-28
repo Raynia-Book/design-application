@@ -1,7 +1,6 @@
 # Show Info
 
-Get the details of the currently Authenticated User along with basic
-subscription information.
+Get the details of the currently Authenticated User.
 
 **URL** : `/api/v1/user/`
 

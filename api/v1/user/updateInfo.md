@@ -15,7 +15,6 @@ Update an Account for the user.
 ```json
 {
     "imagePath": "[Url format]",
-    "email": "[email format]",
     "name": "[unicode 64 chars max]",
     "password": "[password constraint]",
 }

@@ -8,7 +8,7 @@ Update an Account for the user.
 
 **Auth required** : Yes
 
-**Permissions required** : User is a owner of the account
+**Permissions required** : None
 
 **Data constraints**
 
@@ -40,7 +40,6 @@ Update an Account for the user.
 
 ```json
 {
-    "id": 1234,
     "imagePath": "https://google.com",
     "email": "test@gmail.com",
     "name": "name",

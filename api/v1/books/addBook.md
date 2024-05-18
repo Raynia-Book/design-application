@@ -78,7 +78,7 @@ Partial data is allowed.
 
 ## Success Responses
 
-**Condition** : Id provided is valid.
+**Condition** : Data provided is.
 
 **Code** : `200 OK`
 
@@ -86,6 +86,7 @@ Partial data is allowed.
 
 ```json
 {
+    "bookId": 1,
     "message": [
         "Book Added"
     ]

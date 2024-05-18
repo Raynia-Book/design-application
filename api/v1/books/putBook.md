@@ -82,14 +82,6 @@ Partial data is allowed.
 }
 ```
 
-### Or
-
-**Condition** : Authorized User is not have `Publisher` permission.
-
-**Code** : `403 FORBIDDEN`
-
-**Content** : `{}`
-
 ## Notes
 
 * All field can get more infomation in [Books Database](../../../database/README.md)

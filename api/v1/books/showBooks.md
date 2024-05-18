@@ -4,14 +4,6 @@ This is for showing books in the Home Page.
 
 **URL** : `/api/v1/books/`
 
-**QUERY**: 
-
-| Query    | Description |
-| -------- | ------- |
-| q  | For querying `name`, `author` and `publisher` in a database.  |
-| sort |  For sorting prices in database have `asc` is for low to high and `desc` is for high to low.  |
-
-
 **Method** : `POST`
 
 **Auth required** : NO
@@ -22,6 +14,8 @@ This is for showing books in the Home Page.
 
 ```json
 {
+    "q": "google",
+    "sort": "asc",
     "subject": ["คณิตศาสตร์"],
     "level": [1, 2, 3],
     "bookType": ["เนื้อหา", "โจทย์"],
@@ -58,7 +52,7 @@ Partial data is allowed.
 ```json
 [
     {
-        "imagePath": ["https://google.com"],
+        "coverPath": "https://google.com",
         "bookType": ["เนื้อหา"],
         "name": "Biology",
         "price": 123,
@@ -66,7 +60,7 @@ Partial data is allowed.
         "pageNumber": 0
     },
     {
-        "imagePath": ["https://facebook.com"],
+        "coverPath": "https://facebook.com",
         "bookType": ["เนื้อหา"],
         "name": "Chemistry",
         "price": 133,
@@ -74,7 +68,7 @@ Partial data is allowed.
         "pageNumber": 1
     },
     {
-        "imagePath": ["https://x.com"],
+        "coverPath": "https://x.com",
         "bookType": ["เนื้อหา"],
         "name": "Science",
         "price": 143,

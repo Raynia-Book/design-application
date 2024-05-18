@@ -21,4 +21,3 @@ Token is provided with the request:
 
 * [Show Info](user/showInfo.md) : `GET /api/v1/user/`
 * [Update Info](user/updateInfo.md) : `PUT /api/v1/user/`
-* [Delete Account](user/deleteAccount.md) : `DELETE /api/v1/user/`

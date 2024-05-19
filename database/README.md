@@ -3,4 +3,4 @@
 This is a database design for Raynia Book.
 
 
-[database design](https://raynia-book.github.io/design-application/)
+[database design website](https://raynia-book.github.io/design-application/)

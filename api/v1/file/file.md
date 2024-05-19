@@ -2,13 +2,13 @@
 
 This is for downloading pdf.
 
-**URL** : `/api/v1/file/pdf/:filename/`
+**URL** : `/api/v1/file/:filename/`
 
 **Url Parameter**:
 
 | Url Parameter    | Description |
 | -------- | ------- |
-| filename  | For downloading a pdf by filename.  |
+| filename  | For downloading a file by filename.  |
 
 
 **Method** : `GET`
